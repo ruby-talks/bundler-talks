@@ -1,4 +1,5 @@
 require 'bundler'
+require 'thor'
 
 module Bundler
   class CLI < Thor

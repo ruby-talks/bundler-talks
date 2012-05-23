@@ -20,5 +20,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'talks'
+  s.add_dependency 'thor'
   s.add_dependency 'bundler'
 end
