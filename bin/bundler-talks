@@ -3,5 +3,4 @@
 bundler_talks_dir = File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(bundler_talks_dir) unless $LOAD_PATH.include?(bundler_talks_dir)
 require 'bundler-talks'
-
-`bundle #{ARGV.join(' ')}`
+require 'bundler-talks/runner'
