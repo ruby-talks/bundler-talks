@@ -1,4 +1,5 @@
 require 'bundler'
+require 'bundler/cli'
 require 'thor'
 
 module Bundler
