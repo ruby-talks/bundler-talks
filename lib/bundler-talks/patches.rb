@@ -18,5 +18,12 @@ module Bundler
       original_update_method.bind(self).call(*gems)
       Talks.info 'Bunlde update ended'
     end
+    
+    original_exec_method = instance_method :exec
+    define_method :exec do |*args|
+      Talks.info 'Bundle exec started'
+      original_exec_method.bind(self).call(*args)
+      Talks.info 'Bundle exec ended'
+    end
   end
 end
