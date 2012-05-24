@@ -7,16 +7,16 @@ module Bundler
 
     original_install_method = instance_method :install
     define_method :install do
-      Talks.info 'Bunlde install started'
+      Talks.info 'Bundle install started'
       original_install_method.bind(self).call
-      Talks.info 'Bunlde install ended'
+      Talks.info 'Bundle install ended'
     end
 
     original_update_method = instance_method :update
     define_method :update do |*gems|
-      Talks.info 'Bunlde update started'
+      Talks.info 'Bundle update started'
       original_update_method.bind(self).call(*gems)
-      Talks.info 'Bunlde update ended'
+      Talks.info 'Bundle update ended'
     end
   end
 end
