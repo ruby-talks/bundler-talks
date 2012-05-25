@@ -20,9 +20,10 @@ This gem using gem `talks` and overwrites some of bundler methods when you call 
 $ gem install bundler-talks
 $ bundler-talks install # instead of just `bundle install`
 $ bundler-talks update # instead of just `bundle update`
+$ bundler-talks exec # instead of just `bundle exec`
 ```
 
-You can work with `bundler-talks update/install` just the same as with original `bundle update/install` - with some options and customizations:
+You can work with `bundler-talks update/install/exec` just the same as with original `bundle update/install/exec` - with some options and customizations:
 
 ```bash
 $ bundler-talks update rails
@@ -40,9 +41,11 @@ I did it by myself
 
 ### Contributors
 
-* @gazay
+  * @gazay
 
 ### A lot of thanks
+
+  * @imanel for exec method
 
 You can help me with this fun gem and I'll gladly add you here, or above
 
